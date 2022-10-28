@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Тестовое задание
 
-## Getting Started
+## Описание:
 
-First, run the development server:
+Макет: https://www.figma.com/file/ioiNY7mRuoTjftQzKQuNSt/Тестовое-задание?node-id=0%3A1
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Задача: Сверстать макет панели управления црм, подключиться к сервису https://dadata.ru/api/suggest/address/ и выводить адреса введенные пользователем на страницу.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Описание:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Зарегистрироваться на dadata.ru и получить API ключ для выполнения запросов.
+2. Верстка должна быть семантически верной и оптимизирована для мобильных устройств.
+3. Скрывать боковое меню, если разрешение <= 768px
+4. В боковом меню - пункт “Настройки” должен открываться и закрываться по клику, кнопка “Главная” ведет на страницу с новостями и открывается по умолчанию при запуске проекта, кнопка “Поиск адресов” ведет на страницу поиска адресов, url пути описаны в п.4.
+5. На проекте должно быть 2 url пути - главная “/” с новостями и поиск адресов “/address” - c полем ввода адреса.
+6. Блок с навигацией и блок с контентом должны скролиться (если контента больше чем укладывается в высоту экрана) независимо друг от друга, при этом header - всегда статичный и всегда перед глазами.
+7. Минимальная длина ввода в поле ввода адреса - 3 символа.
+8. Для иконок, используйте SVG
+9. Ссылки в тексте в блоке “Новости” должны быть подсвечены и кликабельны, почтовые адреса - должны быть кликабельны и направлять в почтовый клиент с заполненным почтовым адресом.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Требования:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Обязательно использовать React, Typescript.
+2. Запрещено использовать UI-библиотеки и их готовые реализации/компоненты.
 
-## Learn More
+Приветствуется:
 
-To learn more about Next.js, take a look at the following resources:
+1. Использование препроцессоров (sass/scss)
+2. Использование webpack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Результат работы опубликуйте в гит-репозитории.
+Репозиторий должен быть публичным.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Максимальный срок выполнения тестового задания - 2 дня с момента получения ссылки.
 
-## Deploy on Vercel
+## **Установка и запуск**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- склонировать репозиторий - `git clone https://github.com/godninoff/wrench-crm.git`
+- перейти в папку с проектом - `cd wrench-crm`
+- `npm i` - установить зависимости
+- `npm run dev` - для запуска.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### [Ссылка на приложение с кодом](https://codesandbox.io/p/github/godninoff/wrench-crm/)
+
+### Технологии:
+
+<p align="left">
+
+<a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/>
+<a href="https://www.typescriptlang.org/" target="_blank"> <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="typescript" width="40" height="40"/>
+<a href="https://nextjs.org/docs" target="_blank"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/1200px-Nextjs-logo.svg.png" alt="nextjs" width="40" height="40"/>
+
+</p>

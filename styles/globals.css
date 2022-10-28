@@ -1,26 +1,298 @@
+@import url("http://fonts.cdnfonts.com/css/montserrat");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  font-family: "Montserrat", BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1c1c1e;
+}
+
+p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1c1c1e;
+  margin-right: 32px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background: #4f27bf;
+  width: 100%;
+  padding: 16px 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 20px;
+}
+
+.main-container {
+  display: flex;
+  height: 100vw;
+  overflow: hidden;
+}
+
+.menu-main {
+  max-width: 20%;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
+  height: 100vw;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: #1c1c1e;
+  margin-left: 32px;
+}
+
+.menu-list-container {
+  display: flex;
+  align-items: center;
+  margin-left: 32px;
+  padding: 20px 0;
+}
+
+.menu-list-container:hover {
+  border-right: 5px solid #4f27bf;
+}
+
+.menu-settings {
+  display: flex;
+  margin-left: 80px;
+  padding: 20px 0;
+}
+
+.menu-settings:hover {
+  border-right: 5px solid #4f27bf;
+}
+
+.menu-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 10px;
+  margin-right: 44px;
+  color: #1c1c1e;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-name:hover {
+  opacity: 0.7;
+}
+
+.none {
+  display: none;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.menu-triangle:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.suggestions {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 16px 0;
+  border-top: 1px solid #d7d7d7;
+  cursor: pointer;
+  text-align: left;
+  padding-left: 24px;
+}
+
+.suggestions:hover {
+  opacity: 0.7;
+}
+
+.hint {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  padding: 20px 0 12px 20px;
+}
+
+.search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 217px;
+  height: 70px;
+  background: #4f27bf;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  opacity: 0.7;
+}
+
+.search-input {
+  width: 100%;
+  height: 70px;
+  border: 3px solid #4f27bf;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-left: 24px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.react-dadata__container {
+  width: 100%;
+  margin-right: -220px;
+  padding-right: 247px;
+}
+
+.search-container {
+  display: flex;
+  width: 100%;
+}
+
+.menu-burger {
+  display: none;
+  color: white;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1294px) {
+  .menu-list-container {
+    margin-left: 15px;
   }
-  body {
-    color: white;
-    background: black;
+
+  .menu-name {
+    font-size: 15px;
+    line-height: 12px;
+    margin-right: 15px;
+  }
+
+  .menu-settings {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  .main-container {
+    display: contents;
+  }
+
+  .menu-main {
+    display: none;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .menu-icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .menu-settings {
+    margin-left: 30px;
+  }
+
+  .menu-burger {
+    display: block;
+    margin-right: 10px;
+  }
+  .header-text {
+    font-size: 15px;
+    line-height: 12px;
+    margin-left: 8px;
+  }
+
+  .header-icons {
+    height: 18px;
+    width: 18px;
+  }
+
+  .header {
+    padding: 8px 8px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .search-input {
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .search-button {
+    height: 40px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 256px;
+  }
+
+  .search-container {
+    flex-direction: column-reverse;
+  }
+
+  .react-dadata__container {
+    padding-right: 0;
   }
 }
