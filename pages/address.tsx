@@ -15,22 +15,15 @@ const Address = () => {
     DaDataSuggestion<DaDataAddress> | undefined
   >();
 
-  const id = React.useId();
-
   const token = "f70aa33f3ecc457d2483a49ada2d88853dee9c03";
+  const id = React.useId();
 
   return (
     <>
       <Header />
       <div style={{ display: "flex" }}>
         <Menu />
-        <div
-          style={{
-            width: "100%",
-            marginRight: "32px",
-            marginLeft: "32px",
-          }}
-        >
+        <div className="address-container">
           <h2 className=""> Поиск адресов</h2>
           <p>Введите интересующий вас адрес</p>
           <div className="search-container">

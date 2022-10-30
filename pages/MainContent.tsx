@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const MainContent = () => {
   return (
-    <div style={{ width: "80%", marginLeft: "32px", overflow: "auto" }}>
+    <div className="main-content">
       <h2>Новости</h2>
       <p>Обновление CRM до 1.2</p>
       <p>
